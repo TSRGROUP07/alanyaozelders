@@ -49,7 +49,7 @@ export default function Home() {
             <a href="#iletisim" className={styles.navLink}>İletişim</a>
           </div>
 
-          <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="btn btn-primary" style={{borderRadius: "2rem"}}>
+          <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className={`btn btn-primary ${styles.navbarWhatsappBtn}`}>
             <MessageCircle size={18} /> WhatsApp ile İletişime Geç
           </a>
         </nav>
@@ -59,10 +59,10 @@ export default function Home() {
         <div className={`container ${styles.heroContainer}`}>
           <motion.div className={styles.heroContent} {...fadeIn}>
             <h1 className={styles.heroTitle}>
-              Hedefinize Ulaşmak<br/>İçin Doğru Yerdesiniz
+              Alanya Matematik Özel Ders<br/>& Teknofest Koçluğu
             </h1>
             <p className={styles.heroDesc}>
-              Alanında uzman öğretmenlerimiz ve şampiyon mentorlarımızla akademik ve teknolojik hedeflerinize birlikte ulaşıyor, geleceğinizi inşa ediyoruz.
+              Matematik Özel Ders, Robotik Kodlama ve Teknofest Danışmanlığı! Şampiyon mentorlarımızla akademik ve teknolojik hedeflerinize doğrudan ulaşın.
             </p>
             
             <div className={styles.heroBadges}>
@@ -72,7 +72,7 @@ export default function Home() {
               <div className={styles.heroBadge}><Calendar className={styles.heroBadgeIcon} size={18}/> Esnek Randevu</div>
             </div>
 
-            <div style={{display: "flex", alignItems: "center", gap: "1rem"}}>
+            <div style={{display: "flex", flexWrap: "wrap", alignItems: "center", gap: "1rem"}}>
               <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" className="btn btn-primary" style={{borderRadius: "2rem", padding: "1rem 2rem", fontSize: "1.1rem"}}>
                 <MessageCircle size={20} /> Hemen İletişime Geçin
               </a>

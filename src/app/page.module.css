@@ -68,6 +68,10 @@
   border-radius: 2px;
 }
 
+.navbarWhatsappBtn {
+  border-radius: 2rem;
+}
+
 .hero {
   position: relative;
   padding: 4rem 0 6rem 0;
@@ -384,5 +388,8 @@
   }
   .navLinks {
     display: none;
+  }
+  .navbarWhatsappBtn {
+    display: none !important;
   }
 }
