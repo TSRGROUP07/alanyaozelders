@@ -395,4 +395,7 @@
   .heroTitle {
     font-size: 2.2rem;
   }
+  .heroImageContainer {
+    display: none;
+  }
 }
