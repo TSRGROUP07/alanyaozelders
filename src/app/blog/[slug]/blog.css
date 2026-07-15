@@ -1,0 +1,51 @@
+.blog-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-main);
+}
+
+.blog-content h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.blog-content h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-main);
+}
+
+.blog-content p {
+  margin-bottom: 1.5rem;
+}
+
+.blog-content ul, .blog-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem;
+}
+
+.blog-content strong {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.blog-content blockquote {
+  border-left: 4px solid var(--primary);
+  padding-left: 1rem;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  color: var(--text-muted);
+  background-color: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}

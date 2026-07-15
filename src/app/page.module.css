@@ -1,0 +1,388 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoIcon {
+  color: var(--primary);
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Outfit', sans-serif;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoTitle {
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  color: var(--text-main);
+  line-height: 1;
+}
+
+.logoSubtitle {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  font-weight: 500;
+  color: var(--text-main);
+}
+
+.navLink {
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.navLink:hover {
+  color: var(--primary);
+}
+
+.navLinkActive {
+  color: var(--primary);
+}
+
+.navLinkActive::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  border-radius: 2px;
+}
+
+.hero {
+  position: relative;
+  padding: 4rem 0 6rem 0;
+  overflow: hidden;
+}
+
+.heroContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.heroContent {
+  max-width: 600px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.heroDesc {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.heroBadges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.heroBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-main);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+}
+
+.heroBadgeIcon {
+  color: var(--primary);
+}
+
+.heroImageContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 2;
+  position: relative;
+}
+
+.heroImageBlob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background: radial-gradient(circle, rgba(230,57,70,0.1) 0%, rgba(255,255,255,0) 70%);
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.sectionTitleContainer {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionLabel {
+  color: var(--primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.serviceCard {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.serviceIconWrapper {
+  width: 60px;
+  height: 60px;
+  background: rgba(230,57,70,0.05);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+}
+
+.serviceTitle {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.serviceSubtitle {
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.serviceDesc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.serviceArrowBtn {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.serviceArrowBtn:hover {
+  background: var(--primary-hover);
+  transform: translateX(3px);
+}
+
+.statsSection {
+  padding: 6rem 0;
+  background: white;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.statIcon {
+  width: 70px;
+  height: 70px;
+  background: rgba(230,57,70,0.05);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+}
+
+.statContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+.statTitle {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.statDesc {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.ctaBanner {
+  background: linear-gradient(135deg, #e63946 0%, #b3121d 100%);
+  border-radius: 2rem;
+  padding: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.ctaBannerContent {
+  position: relative;
+  z-index: 2;
+}
+
+.ctaBannerTitle {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ctaBannerDesc {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.ctaBannerBtn {
+  background: white;
+  color: var(--text-main);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  transition: transform 0.2s;
+  z-index: 2;
+}
+
+.ctaBannerBtn:hover {
+  transform: scale(1.05);
+}
+
+.ctaBannerSubtext {
+  position: absolute;
+  bottom: -25px;
+  right: 50px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  z-index: 2;
+}
+
+.footer {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 1rem;
+  color: var(--text-main);
+}
+
+@media (max-width: 1024px) {
+  .heroContainer {
+    grid-template-columns: 1fr;
+  }
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ctaBanner {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicesGrid {
+    grid-template-columns: 1fr;
+  }
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+  .navLinks {
+    display: none;
+  }
+}
