@@ -59,10 +59,10 @@ export default function Home() {
         <div className={`container ${styles.heroContainer}`}>
           <motion.div className={styles.heroContent} {...fadeIn}>
             <h1 className={styles.heroTitle}>
-              Alanya Matematik Özel Ders<br/>& Teknofest Koçluğu
+              Alanya Matematik Özel Ders,<br/>Çalışma Koçluğu & Teknofest
             </h1>
             <p className={styles.heroDesc}>
-              Matematik Özel Ders, Robotik Kodlama ve Teknofest Danışmanlığı! Şampiyon mentorlarımızla akademik ve teknolojik hedeflerinize doğrudan ulaşın.
+              Matematik Özel Ders, Eğitim Koçluğu, Robotik Kodlama ve Teknofest Danışmanlığı! Şampiyon mentorlarımızla akademik ve teknolojik hedeflerinize doğrudan ulaşın.
             </p>
             
             <div className={styles.heroBadges}>
